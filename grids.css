@@ -1,60 +1,52 @@
-/* Sets the base styling for the body and html elements */
 body, html {
-  height: 100%; /* Makes the body and html elements take up the full height of the viewport */
-  margin: 0; /* Removes the default margin from the body and html elements */
-  font-family: Arial, sans-serif; /* Sets the default font for the webpage to Arial or a sans-serif alternative */
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Styles the grid container */
 .grid-container {
-
-  display: grid; /* Enables CSS grid layout for the container */
-  grid-template-columns: 1fr 1fr; /* Divides the container into two columns of equal width */
-  align-items: start; /* Aligns grid items at the start of the grid area in the cross axis */
-  grid-template-rows: auto 1fr 1fr; /* Defines three rows with the first row height set to content and the others to equal height */
-
-  grid-gap: 100px; /* Sets the gap between grid items */
-  height: 100vh; /* Sets the height of the grid container to 100% of the viewport height */
-  padding: 10px; /* Adds padding around the grid container */
-  box-sizing: border-box; /* Changes the box-sizing so padding and border are included in the element's total width and height */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  grid-template-rows: auto 1fr 1fr;
+  grid-gap: 100px;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-/* Styles for the header */
 .header {
-  grid-column: 1 / -1; /* Spans the header across all columns in the grid */
-  text-align: center; /* Centers the header text horizontally */
-  padding: 20px; /* Adds padding inside the header */
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 20px;
 }
 
-/* Styles for the header title */
 .header-title {
-  margin: 0; /* Removes default margin from the header title */
-  font-size: 30px; /* Sets the font size for the header title */
+  margin: 0;
+  font-size: 30px;
 }
 
-/* Styles for the header description */
 .header-description {
-  margin: 10px 0 0; /* Sets the top margin of the header description and removes bottom and side margins */
-  font-size: 16px; /* Sets the font size for the header description */
-  color: #555; /* Sets the text color for the header description */
+  margin: 10px 0 0;
+  font-size: 16px;
+  color: #555;
 }
 .icon {
-  position: relative; /* Ensures that the absolute positioning of .icon-text is relative to this container */
+  position: relative;
   text-align: center;
 }
-/* Styles for the icon wrapper */
+
 .icon-wrapper {
-  position: relative; /* Sets the positioning context for absolutely positioned children */
-  text-align: center; /* Centers the content horizontally within the icon wrapper */
+  position: relative;
+  text-align: center;
 }
 
-/* Styles for the icon image */
 .icon img {
   width: 100%;
   height: auto;
   object-fit: contain;
 }
-/* Styles for the icon text */
+
 .icon-text {
   position: absolute;
   top: 50%;
@@ -66,17 +58,16 @@ body, html {
   padding: 5px;
   border-radius: 5px;
 }
-.header-logo {
-  width: 100%; /* Adjust as needed to fit your design */
-  height: auto; /* Keeps the aspect ratio of the logo */
-  display: block; /* Ensures the logo is a block-level element to take up its own line */
-  margin: 0 auto; /* Centers the logo within the header */
-}
 
+.header-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 .grid-container::after {
   content: '';
   display: block;
-  height: 200px; /* This will create a space of 20px */
+  height: 200px;
 }
-
