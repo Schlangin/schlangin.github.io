@@ -1,3 +1,8 @@
+*{
+  font-family: "Oswald", sans-serif;
+}
+
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -21,4 +26,30 @@
 }
 .text-block {
   color: white; /* Change to your desired font color */
+
+}
+.text-block p {
+font-size: 20px;
+
+
+}
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-nav li {
+  display: inline;
+  margin-right: 20px; /* Adjust spacing as needed */
+}
+
+.footer-nav a {
+  color: inherit; /* Inherits color from parent elements, change as needed */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.footer-nav a:hover {
+  text-decoration: underline; /* Adds underline on hover for better usability */
 }
