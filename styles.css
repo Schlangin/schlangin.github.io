@@ -1,0 +1,55 @@
+body, button, input, textarea {
+    font-family: 'Jersey 10', sans-serif;
+}
+
+/* Additionally, to ensure maximum coverage, 
+   override Bootstrap styles for headings and navbar that may not be inheriting the body font */
+h1, h2, h3, h4, h5, h6, .navbar {
+    font-family: 'Jersey 10', sans-serif !important;
+}
+.header {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header-title {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  .header-description {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .header-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  body {
+    font-family: 'Jersey 10', sans-serif;
+}
+#carouselExampleIndicators {
+    width: 50%;  /* Adjust width as necessary */
+    margin: auto; /* Center the carousel if less than 100% width */
+}
+
+.carousel-item img {
+    width: 100%; /* Ensure the image covers the full width of the carousel */
+    height: 300px; /* Adjust height as necessary */
+    object-fit: cover; /* This ensures the image covers the area without distorting aspect ratio */
+}
+body {
+    background-image: url('moroccan-flower-dark.png'); /* Path to your background image */
+    background-repeat: repeat; /* Makes the background tile throughout the page */
+    background-attachment: fixed; /* Optional: Keeps the background fixed during scrolling */
+    background-size: cover; /* Optional: Adjust depending on your specific needs */
+}
+.history-text {
+    color: white; /* Dark blue color */
+}
+

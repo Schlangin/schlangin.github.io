@@ -1,0 +1,27 @@
+/* Custom Stylesheet: custom-styles.css */
+
+/* Selector 1: Custom style for all paragraphs */
+.custom-pattern {
+    background-image: url('images/pattern.png');
+    background-repeat: repeat;
+}
+
+/* Selector 2: Custom style for navigation bar */
+.nav-custom {
+    background-color: #3e4449;
+    color: #ffffff;
+}
+
+/* Selector 3: Custom style for buttons */
+.btn-custom {
+    background-color: #00cc66;
+    border: none;
+    color: #ffffff;
+}
+
+/* Selector 4: Custom style for footer */
+.footer-custom {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+}
